@@ -125,6 +125,7 @@ class Products extends CI_Controller
                 $this->image_lib->resize();
                 $slugcode = random_string('numeric', 5);
                 $product_slug  = url_title($this->input->post('product_name'), 'dash', TRUE);
+                
                 $data  = [
                     'user_id'               => $this->session->userdata('id'),
                     'category_product_id'   => $this->input->post('category_id'),

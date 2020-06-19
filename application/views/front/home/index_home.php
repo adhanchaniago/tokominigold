@@ -25,9 +25,6 @@ dan anda langsung pegang emas. Koin emas 24 karat bersertifikat dan teruji secar
 
 
 
-
-
-
 <section class="bg-white">
     <div class="container">
         <div class="row">
@@ -108,22 +105,23 @@ dan anda langsung pegang emas. Koin emas 24 karat bersertifikat dan teruji secar
                 <div class="card">
 
                     <div class="card-body">
-                        <h5 class="card-title">Daftar Jadi Seller</h5>
+                        <h5 class="card-title">Daftar Jadi Reseller</h5>
                         <hr>
 
                         <?php
                         echo form_open('auth/register')
                         ?>
-                        <!-- <div class="form-group">
+
+<div class="form-group">
                             <select class="form-control form-control-chosen" name="user_title" value="">
-                                <option value=''>-- Pilih Title --</option>
                                 <option value='Bapak'>Bapak</option>
                                 <option value='Ibu'>Ibu</option>
                                 <option value='Saudara'>Saudara</option>
                                 <option value='Saudari'>Saudari</option>
 
                             </select>
-                        </div> -->
+                        </div>
+                       
                         <div class="form-group">
                             <input type="text" class="form-control" name="user_name" placeholder="Nama Lengkap" value="<?php echo set_value('user_name'); ?>">
                             <?php echo form_error('user_name', '<small class="text-danger pl-3">', '</small>'); ?>
