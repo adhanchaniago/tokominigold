@@ -20,6 +20,17 @@ class User extends CI_Controller
         ];
         $this->load->view('admin/layout/wrapp', $data, FALSE);
     }
-    //Create User
+    //Detail User
+    public function detail($id)
+    {
+        $user_detail =  $this->user_model->detail($id);
+        $data = [
+            'title'                 => 'Data User',
+            'user_detail'           => $user_detail,
+            'content'               => 'admin/user/detail_user'
+
+        ];
+        $this->load->view('admin/layout/wrapp', $data, FALSE);
+    }
 
 }

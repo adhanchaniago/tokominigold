@@ -58,7 +58,7 @@ class User_model extends CI_Model
     }
 
     // Product User Read
-    public function read($id)
+    public function detail($id)
     {
         $this->db->select('*');
         $this->db->from('user');

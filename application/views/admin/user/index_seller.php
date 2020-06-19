@@ -63,7 +63,7 @@
 
 
 
-                            <a href="<?php echo base_url('products/user/' . $list_seller->id); ?>" class="btn btn-info btn-sm" target="blank"> <i class="fas fa-external-link-alt"></i> Lihat</a>
+                            <a href="<?php echo base_url('admin/user/detail/' . $list_seller->id); ?>" class="btn btn-info btn-sm" target="blank"> <i class="fas fa-external-link-alt"></i> Lihat</a>
 
                         </td>
                     </tr>
