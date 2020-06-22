@@ -39,8 +39,8 @@
             <label class="col-lg-3 col-form-label">Pengurangan Harga Reseller 
             </label>
             <div class="col-lg-6">
-                <input type="text" class="form-control" name="price_reseller" placeholder="Harga Reseller" value="<?php echo set_value('price_reseller'); ?>">
-                <?php echo form_error('price_reseller', '<small class="text-danger">', '</small>'); ?>
+                <input type="text" class="form-control" name="pengurangan" placeholder="Harga Reseller" value="<?php echo set_value('pengurangan'); ?>">
+                <?php echo form_error('pengurangan', '<small class="text-danger">', '</small>'); ?>
             </div>
         </div>
 

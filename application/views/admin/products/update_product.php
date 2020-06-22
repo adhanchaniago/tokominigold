@@ -39,8 +39,8 @@
             <label class="col-lg-3 col-form-label">Pengurangan Harga Reseller 
             </label>
             <div class="col-lg-6">
-                <input type="text" class="form-control" name="price_reseller" placeholder="Harga Reseller" value="<?php echo $products->price_reseller; ?>">
-                <?php echo form_error('price_reseller', '<small class="text-danger">', '</small>'); ?>
+                <input type="text" class="form-control" name="pengurangan" placeholder="Harga Reseller" value="<?php echo $products->pengurangan; ?>">
+                <?php echo form_error('pengurangan', '<small class="text-danger">', '</small>'); ?>
             </div>
         </div>
 
@@ -115,7 +115,7 @@
             <div class="col-lg-3"></div>
             <div class="col-lg-6">
                 <button type="submit" class="btn btn-primary btn-lg btn-block">
-                    Publish Berita
+                    Update
                 </button>
             </div>
         </div>

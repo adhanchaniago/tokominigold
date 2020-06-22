@@ -7,14 +7,14 @@ class Oops extends CI_Controller
     public function index()
     {
         $data = array(
-            'title' => 'Oops! Halaman tidak di temukan',
+            'title'     => 'Oops! Halaman tidak di temukan',
             'deskripsi' => 'error 404',
-            'keywords' => 'keywords',
-            'content'  => 'front/oops/index_oops'
+            'keywords'  => 'keywords',
+            'content'   => 'front/oops/index_oops'
         );
         $this->load->view('front/layout/wrapp', $data, FALSE);
     }
 }
 
- /* End of file Kontak.php */
- /* Location: ./application/controllers/Kontak.php */
+ /* End of file Oops.php */
+ /* Location: ./application/controllers/Oops.php */
