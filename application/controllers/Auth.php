@@ -111,7 +111,7 @@ class Auth extends CI_Controller
 
 		if ($this->form_validation->run() == false) {
 			$data = [
-				'title'			=> 'Register Donatur',
+				'title'			=> 'Register Reseller',
 				'content'       => 'front/auth/register'
 			];
 			$this->load->view('front/layout/wrapp', $data, FALSE);

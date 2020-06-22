@@ -152,6 +152,8 @@ dan anda langsung pegang emas. Koin emas 24 karat bersertifikat dan teruji secar
                         <hr>
                        
                         <div class="text-center">
+                            
+                            <a class="small" href="<?php echo base_url('auth/register'); ?>">Syarat dan Ketentuan</a><br>
                             <a class="small" href="<?php echo base_url('auth') ?>">Already have an account? Login!</a>
                         </div>
 

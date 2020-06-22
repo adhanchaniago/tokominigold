@@ -48,6 +48,9 @@ $category_buy   = $this->category_buy_model->get_category_buy();
         </div>
       </li>
 
+      <li class="nav-item"><a class="nav-link" href="<?php echo base_url('page/cara_order'); ?>"> Cara Order </a></li>
+      <li class="nav-item"><a class="nav-link" href="<?php echo base_url('auth/register'); ?>"> Daftar Reseller </a></li>
+
       
             </ul>
             <ul class="navbar-nav">
