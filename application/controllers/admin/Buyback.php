@@ -179,7 +179,7 @@ class Buyback extends CI_Controller
           $config['width']                = 500;
           $config['height']               = 500;
           $config['thumb_marker']         = '';
-          $this->load->library('image_lib', $config)
+          $this->load->library('image_lib', $config);
           $this->image_lib->resize();
           // Hapus Gambar Lama Jika Ada upload gambar baru
           if ($buyback->buyback_img != "") {
