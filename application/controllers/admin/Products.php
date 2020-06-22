@@ -48,10 +48,6 @@ class Products extends CI_Controller
         //End Limit Start
         $this->pagination->initialize($config);
 
-
-
-
-
         $products = $this->products_model->get_products($limit, $start);
         $data = [
             'title'         => 'Data Produk',
@@ -64,7 +60,6 @@ class Products extends CI_Controller
     //Create New products
     public function create()
     {
-
 
         $category_products = $this->category_products_model->get_category_products();
         $this->form_validation->set_rules(
@@ -125,15 +120,17 @@ class Products extends CI_Controller
                 $this->image_lib->resize();
                 $slugcode = random_string('numeric', 5);
                 $product_slug  = url_title($this->input->post('product_name'), 'dash', TRUE);
-                
+                $harganormal = $this->input->post('product_price');
+                $hargaseller = $this->input->post('price_reseller');
+                $priceseller =  $harganormal-$hargaseller;                
                 $data  = [
                     'user_id'               => $this->session->userdata('id'),
                     'category_product_id'   => $this->input->post('category_id'),
                     'product_slug'          => $slugcode . '-' . $product_slug,
                     'product_name'          => $this->input->post('product_name'),
                     'product_desc'          => $this->input->post('product_desc'),
-                    'product_price'         => $this->input->post('product_price'),
-                    'price_reseller'         => $this->input->post('price_reseller'),
+                    'product_price'         => $harganormal,
+                    'price_reseller'        => $priceseller,
                     'product_stock'         => $this->input->post('product_stock'),
                     'product_size'          => $this->input->post('product_size'),
                     'product_img'           => $upload_data['uploads']['file_name'],
@@ -171,7 +168,6 @@ class Products extends CI_Controller
             'required',
             ['required'      => '%s harus diisi']
         );
-
 
         if ($valid->run()) {
             //Kalau nggak Ganti gambar
@@ -225,14 +221,18 @@ class Products extends CI_Controller
                     }
                     //End Hapus Gambar
 
+                    $harganormal = $this->input->post('product_price');
+                    $hargaseller = $this->input->post('price_reseller');
+                    $priceseller =  $harganormal-$hargaseller;            
+
                     $data  = [
                         'id'                    => $id,
                         'user_id'               => $this->session->userdata('id'),
                         'category_product_id'   => $this->input->post('category_id'),
                         'product_name'          => $this->input->post('product_name'),
                         'product_desc'          => $this->input->post('product_desc'),
-                        'product_price'         => $this->input->post('product_price'),
-                        'price_reseller'        => $this->input->post('price_reseller'),
+                        'product_price'         => $harganormal,
+                        'price_reseller'        => $priceseller,
                         'product_stock'         => $this->input->post('product_stock'),
                         'product_size'          => $this->input->post('product_size'),
                         'product_img'           => $upload_data['uploads']['file_name'],
@@ -246,6 +246,9 @@ class Products extends CI_Controller
             } else {
                 //Update Berita Tanpa Ganti Gambar
                 // Hapus Gambar Lama Jika ada upload gambar baru
+                $harganormal = $this->input->post('product_price');
+                    $hargaseller = $this->input->post('price_reseller');
+                    $priceseller =  $harganormal-$hargaseller;     
                 if ($products->product_img != "")
                     $data  = [
                         'id'                    => $id,
@@ -253,8 +256,8 @@ class Products extends CI_Controller
                         'category_product_id'   => $this->input->post('category_id'),
                         'product_name'          => $this->input->post('product_name'),
                         'product_desc'          => $this->input->post('product_desc'),
-                        'product_price'         => $this->input->post('product_price'),
-                        'price_reseller'         => $this->input->post('price_reseller'),
+                        'product_price'         => $harganormal,
+                        'price_reseller'        => $priceseller,
                         'product_stock'         => $this->input->post('product_stock'),
                         'product_size'          => $this->input->post('product_size'),
                         'product_status'        => $this->input->post('product_status'),

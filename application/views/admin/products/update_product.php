@@ -36,7 +36,7 @@
         </div>
 
         <div class="form-group row">
-            <label class="col-lg-3 col-form-label">Harga Reseller <span class="text-danger">Optional</span>
+            <label class="col-lg-3 col-form-label">Pengurangan Harga Reseller 
             </label>
             <div class="col-lg-6">
                 <input type="text" class="form-control" name="price_reseller" placeholder="Harga Reseller" value="<?php echo $products->price_reseller; ?>">

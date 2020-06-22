@@ -45,7 +45,6 @@ class User_model extends CI_Model
         $this->db->where('id', $data['id']);
         $this->db->update('user', $data);
     }
-
     // Dashboard
     public function user_seller()
     {
@@ -56,7 +55,6 @@ class User_model extends CI_Model
         $query = $this->db->get();
         return $query->result();
     }
-
     // Product User Read
     public function detail($id)
     {

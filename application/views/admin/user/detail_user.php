@@ -39,8 +39,6 @@
             : <?php echo $user_detail->user_address;?>
             </div>
     </div>
-
-
             </div>
         </div>
     </div>
