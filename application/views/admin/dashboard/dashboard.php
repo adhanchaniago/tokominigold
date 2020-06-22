@@ -99,7 +99,7 @@
 
 
                                 </td>
-                                <td><a href="<?php echo base_url('products/user/') . $user_seller->id; ?>" class="btn btn-sm btn-primary" target="blank">Detail</a></td>
+                                <td><a href="<?php echo base_url('admin/user/detail/') . $user_seller->id; ?>" class="btn btn-sm btn-primary" target="blank">Detail</a></td>
                             </tr>
 
                         <?php endforeach; ?>

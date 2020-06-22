@@ -19,8 +19,9 @@ $meta = $this->meta_model->get_meta();
                     <div class="col-md-6 p-5">
                         <div style="line-height: 35px;">
                         <h3><b>Keuntungan Menjadi Reseller</b></h3>
-                        reseller MiniGold merupakan bagian dari menyebarkan semangat menabung emas sekaligus 
-                        membuka peluang usaha bagi anda semua. Menjadi reseller tokominigold.com memiliki beberapa syarat.<br><br>
+                        Reseller MiniGold merupakan bagian dari menyebarkan semangat menabung emas sekaligus 
+                        membuka peluang usaha bagi anda semua. Keuntungan menjadi reseller anda akan mendapatkan potongan harga yang menarik.
+                        Menjadi reseller tokominigold.com memiliki beberapa syarat.<br><br>
                         <h4><b>Syarat  dan ketentuan menjadi reseller</b></h4>
                         <ol>
                             <li>Pembelian awal Rp. 500.000,- atau Rp 1.000.000,-</li>

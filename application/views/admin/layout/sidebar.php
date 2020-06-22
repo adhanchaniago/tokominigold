@@ -5,7 +5,6 @@ $meta = $this->meta_model->get_meta();
 ?>
 
 
-
 <!-- Sidebar -->
 <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -55,13 +54,11 @@ $meta = $this->meta_model->get_meta();
     <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url('admin/seller'); ?>">
             <i class="far fa-fw fa-user"></i>
-            <span>Seller</span>
+            <span>Reseller</span>
         </a>
     </li>
 
     <hr class="sidebar-divider">
-
-
 
     <hr class="sidebar-divider">
     <div class="sidebar-heading">
