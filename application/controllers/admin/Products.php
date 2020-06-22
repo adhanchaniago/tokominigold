@@ -16,7 +16,7 @@ class Products extends CI_Controller
   {
     $config['base_url']                   = base_url('admin/products/index/');
     $config['total_rows']                 = count($this->products_model->total_row());
-    $config['per_page']                   = 7;
+    $config['per_page']                   = 8;
     $config['uri_segment']                = 4;
     // $config['use_page_numbers'] = TRUE;
     // $config['page_query_string'] = true;
