@@ -65,8 +65,6 @@
             </div>
         </div>
     </div>
-
-
     <!-- Invoice Example -->
     <div class="col-xl-8 col-lg-7 mb-4">
         <div class="card">
@@ -78,7 +76,6 @@
                 <table class="table align-items-center table-flush">
                     <thead class="thead-light">
                         <tr>
-
                             <th>Nama</th>
                             <th>No. Handphone</th>
                             <th>Status</th>
@@ -96,8 +93,6 @@
                                     <?php else : ?>
                                         <span class="badge badge-danger">Nonaktif</span>
                                     <?php endif; ?>
-
-
                                 </td>
                                 <td><a href="<?php echo base_url('admin/user/detail/') . $user_seller->id; ?>" class="btn btn-sm btn-primary" target="blank">Detail</a></td>
                             </tr>
@@ -118,9 +113,7 @@
                 <h6 class="m-0 font-weight-bold text-light">Produk Terbaru</h6>
             </div>
             <div>
-
                 <?php foreach ($new_products as $new_products) : ?>
-
                     <div class="customer-message align-items-center">
                         <a class="font-weight-bold" href="#">
                             <div class="text-truncate message-title"><?php echo $new_products->product_name; ?></div>
@@ -128,12 +121,7 @@
                                 <?php echo $new_products->user_name; ?> · <?php echo date('d F Y', $new_products->date_created); ?></div>
                         </a>
                     </div>
-
                 <?php endforeach; ?>
-
-
-
-
             </div>
         </div>
     </div>
