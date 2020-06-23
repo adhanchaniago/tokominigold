@@ -32,7 +32,7 @@
 
 <script>
     $('#summernote').summernote({
-        placeholder: 'Deskripsi Berita ..',
+        placeholder: 'Deskripsi Produk ..',
         tabsize: 2,
         height: 130,
         toolbar: [

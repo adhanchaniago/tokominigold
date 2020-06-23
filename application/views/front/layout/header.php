@@ -12,7 +12,7 @@ $meta = $this->meta_model->get_meta();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><?php echo $meta->title ?> | <?php echo $meta->tagline ?></title>
-    <link rel="shortcut icon" href="<?php echo base_url('assets/upload/image/' . $meta->favicon) ?>">
+    <link rel="shortcut icon" href="<?php echo base_url('assets/img/logo/' . $meta->favicon) ?>">
     <meta name="description" content="<?php echo $meta->description ?>">
     <meta name="keywords" content="<?php echo $meta->title . ',' . $meta->keywords ?>">
     <meta name="author" content="<?php echo $meta->title ?>">

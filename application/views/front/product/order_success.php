@@ -42,7 +42,7 @@ $meta      = $this->meta_model->get_meta();
             </tr>
             <tr>
                 
-                <td colspan="4">Harga Belum Termasuk Ongkos Kirim, Silahkan menghubungi Admin untuk Info lebih Lanjut<br>
+                <td colspan="4">Harga Belum Termasuk Ongkos Kirim dan Asuransi, Silahkan menghubungi Admin untuk Info lebih Lanjut<br>
                 <b>Phone:</b> <?php echo $meta->telepon;?><br>
           <b>Email:</b> <?php echo $meta->email;?>
             
@@ -50,10 +50,6 @@ $meta      = $this->meta_model->get_meta();
             </tr>
         </tbody>
     </table>  
-
-
-
-
         Terima Kasih Telah Belanja di  <?php echo $meta->title;?>
         </div>
     </div>

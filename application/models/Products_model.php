@@ -53,7 +53,7 @@ class Products_model extends CI_Model
     $this->db->from('products');
     $this->db->where(['category_product_id'     =>  4, 'product_status' => 'Aktif']);
     $this->db->order_by('id', 'DESC');
-    $this->db->limit(4);
+    $this->db->limit(8);
     $query = $this->db->get();
     return $query->result();
   }

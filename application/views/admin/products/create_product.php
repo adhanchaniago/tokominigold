@@ -97,7 +97,7 @@
             </div>
         </div>
         <div class="form-group row">
-            <label class="col-lg-3 col-form-label">Deskripsi Berita <span class="text-danger">*</span>
+            <label class="col-lg-3 col-form-label">Deskripsi Produk <span class="text-danger">*</span>
             </label>
             <div class="col-lg-9">
 
