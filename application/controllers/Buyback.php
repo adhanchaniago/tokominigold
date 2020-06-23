@@ -269,6 +269,43 @@ class Buyback extends CI_Controller
       redirect(base_url('buyback/buy_success/'), 'refresh');
     }
   }
+
+// private function _sendEmail($data, $type)
+  // {
+  // 	$config = [
+
+  // 		'protocol' 		=> 'smtp',
+  // 		'smtp_host' 	=> 'ssl://mail.sitemail.com',
+  // 		'smtp_port' 	=> 465,
+  // 		'smtp_user' 	=> 'mail@sitemail.com',
+  // 		'smtp_pass' 	=> 'password',
+  // 		'mailtype' 		=> 'html',
+  // 		'charset' 		=> 'utf-8',
+  // 	];
+  // 	$this->load->library('email', $config);
+  // 	$this->email->initialize($config);
+  // 	$this->email->set_newline("\r\n");
+  //     $this->email->from('mail@sitemail.com', 'Order - ' .$data['kode_transaksi'] );
+  //     // $this->email->cc('');
+  // 	$this->email->to('mail@sitemail.com');
+  // 	if ($type == 'order') {
+  // 		$this->email->subject('Order LM Mini Gold');
+  // 		$this->email->message(
+  //             ' Order Baru, Silahkan Cek Detail pesanan melalui Dashboard tokominigold '
+  //         );
+  // 	} elseif ($type == 'forgot') {
+  // 		$this->email->subject('Reset Password');
+  // 		$this->email->message('Silahkan Klik Link ini untuk Mereset Password');
+  // 	}
+  // 	if ($this->email->send()) {
+  // 		return true;
+  // 	} else {
+  // 		echo $this->email->print_debugger();
+  // 		die;
+  // 	}
+  // }
+
+
   public function buy_success()
   {
     $data = [
