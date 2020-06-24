@@ -16,7 +16,7 @@ class Buyback extends CI_Controller
   {
     $config['base_url']               = base_url('admin/buyback/index/');
     $config['total_rows']             = count($this->buyback_model->total_row());
-    $config['per_page']               = 5;
+    $config['per_page']               = 8;
     $config['uri_segment']            = 4;
     // $config['use_page_numbers'] = TRUE;
     // $config['page_query_string'] = true;

@@ -27,6 +27,7 @@
                     <tr>
                         <th>No</th>
                         <th>Produk</th>
+                        <th>Type</th>
                         <th>Harga</th>
                         <th>Reseller</th>
                         <th>Stok</th>
@@ -40,6 +41,7 @@
                     <tr>
                         <td><?php echo $no; ?></td>
                         <td><?php echo $products->product_name; ?></td>
+                        <td><?php echo $products->category_product_name; ?></td>
                         <td>Rp. <?php echo number_format($products->product_price,'0',',','.'); ?></td>
                         <td>Rp. <?php echo number_format($products->price_reseller,'0',',','.'); ?></td>
                         <td><?php echo $products->product_stock; ?> Pcs</td>

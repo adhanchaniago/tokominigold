@@ -27,9 +27,8 @@
                     <tr>
                         <th>No</th>
                         <th>Produk</th>
-                        <th>Post by</th>
-                       
-
+                        <th>Harga Buyback</th>                   
+                        <th>Type</th>                   
                         <th>Views</th>
                         <th width="25%">Action</th>
                     </tr>
@@ -39,7 +38,8 @@
                     <tr>
                         <td><?php echo $no; ?></td>
                         <td><?php echo $buyback->buyback_name; ?></td>
-                        <td><?php echo $buyback->user_name; ?></td>                       
+                        <td>Rp. <?php echo number_format($buyback->buyback_price,'0',',','.'); ?></td>                       
+                        <td><?php echo $buyback->category_buy_name; ?></td>
                         <td><?php echo $buyback->buyback_views; ?></td>
                         <td>
                             <a href="<?php echo base_url('buyback/detail/' . $buyback->buyback_slug); ?>" class="btn btn-primary btn-sm" target="blank"><i class="fas fa-external-link-alt"></i> Lihat</a>

@@ -232,7 +232,7 @@ class Buyback_model extends CI_Model
       'buyback_status'           =>  'Aktif',
       'buyback.category_buy_id'      =>  $category_buy_id
     ));
-    $this->db->order_by('buyback.id', 'DESC');
+    $this->db->order_by('buyback.id', 'ASC');
     $this->db->limit($limit, $start);
     $query = $this->db->get();
     return $query->result();

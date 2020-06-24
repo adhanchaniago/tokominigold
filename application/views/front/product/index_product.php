@@ -12,7 +12,9 @@
     <div class="row">
 
         <div class="col-lg-12">
-
+            
+        <h1>Beli Emas</h1>
+        <p>Emas Batangan menjadi primadona investasi sejak dari zaman dahulu. Hal ini karena nilai dari emas cenderung akan terus mengalami kenaikan, selain itu dengan kita menabung emas bisa menghindari gerusan inflasi.</p>
          <b><?php echo $title;?></b> <br>Update Harga <?php echo tanggal() ?>
          <hr>
 
