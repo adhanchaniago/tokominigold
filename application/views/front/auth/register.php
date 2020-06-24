@@ -24,7 +24,7 @@ $meta = $this->meta_model->get_meta();
                         Menjadi reseller tokominigold.com memiliki beberapa syarat.<br><br>
                         <h4><b>Syarat  dan ketentuan menjadi reseller</b></h4>
                         <ol>
-                            <li>Pembelian awal Rp. 500.000,- atau Rp 1.000.000,-</li>
+                            <li>Pembelian awal Rp. 500.000,-</li>
                             <li>Bersedia bekerja sama dengan Reseller Tokominigold.com</li>
                             <li>Melampirkan scan KTP / KK</li>
                         </ol>

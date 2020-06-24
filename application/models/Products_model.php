@@ -251,7 +251,7 @@ class Products_model extends CI_Model
       'product_status'           =>  'Aktif',
       'products.category_product_id'      =>  $category_product_id
     ));
-    $this->db->order_by('products.id', 'DESC');
+    $this->db->order_by('products.id', 'ASC');
     $this->db->limit($limit, $start);
     $query = $this->db->get();
     return $query->result();
