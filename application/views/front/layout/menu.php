@@ -63,7 +63,7 @@ $category_buy   = $this->category_buy_model->get_category_buy();
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="<?php echo base_url('myaccount') ?>">My Account</a>
-                            <a class="dropdown-item" href="<?php echo base_url('myaccount/myproducts') ?>">My Product</a>
+                            
                             <a class="dropdown-item" href="<?php echo base_url('myaccount/ubah_password'); ?>">Setings</a>
                             <div class="dropdown-divider"></div>
                             <?php if ($user->role_id == 1) : ?>
