@@ -25,7 +25,7 @@ $meta = $this->meta_model->get_meta();
 
     <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url('admin/transaksi'); ?>">
-            <i class="fas fa-fw fa-shopping-cart"></i>
+            <i class="fas fa-fw fa-shopping-bag"></i>
             <span>Transaksi</span>
         </a>
     </li>
@@ -47,7 +47,13 @@ $meta = $this->meta_model->get_meta();
     <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url('admin/category_products'); ?>">
             <i class="fas fa-fw fa-tag"></i>
-            <span>Category</span>
+            <span>Category Beli</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url('admin/category_buy'); ?>">
+            <i class="fas fa-fw fa-hashtag"></i>
+            <span>Category Buyback</span>
         </a>
     </li>
 
