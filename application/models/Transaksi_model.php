@@ -19,9 +19,9 @@ class Transaksi_model extends CI_Model
   }
   public function new_transaksi()
   {
-    $this->db->select('transaksi.*, user.user_name');
+    $this->db->select('*');
     $this->db->from('transaksi');
-    $this->db->join('user', 'user.id = transaksi.user_id', 'LEFT');
+    // $this->db->join('user', 'user.id = transaksi.user_id', 'LEFT');
     $this->db->order_by('id', 'DESC');
     $this->db->limit(3);
     $query = $this->db->get();
