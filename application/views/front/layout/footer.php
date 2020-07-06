@@ -46,12 +46,10 @@ $meta      = $this->meta_model->get_meta();
             </div>
             <div class="col-6 col-md">
               <h5>Social Media</h5>
-              <ul class="social-network social-circle">
-                        <li><a href="<?php echo $meta->facebook;?>" class="icoFacebook" title="Facebook"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fab fa-youtube"></i></a></li>
-                    </ul>
+              
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox"></div>
+            
             </div>
         </div>
     </div>
@@ -139,6 +137,8 @@ $(document).on('click', '.number-spinner button', function () {
 
 
 
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f02dc8624cb9814"></script>
 
 
 
