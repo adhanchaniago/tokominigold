@@ -20,11 +20,14 @@
 </a>
 
 <script src="<?php echo base_url('assets/admin/vendor/jquery/jquery.min.js'); ?>"></script>
+<script src="<?php echo base_url('assets/admin/vendor/bootstrap/js/bootstrap.min.js') ?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/admin/vendor/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
 <script src="<?php echo base_url('assets/admin/vendor/jquery-easing/jquery.easing.min.js'); ?>"></script>
 <script src="<?php echo base_url('assets/admin/js/myscript.min.js') ?>"></script>
 <script src="<?php echo base_url('assets/admin/vendor/chart.js/Chart.min.js'); ?>"></script>
 <script src="<?php echo base_url('assets/admin/js/demo/chart-area-demo.js'); ?>"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
 <!-- SUMMERNOTE -->
 <link href="<?php echo base_url('assets/admin/js/summernote/summernote-lite.min.css'); ?>" rel="stylesheet">
@@ -32,7 +35,6 @@
 
 <script>
     $('#summernote').summernote({
-        placeholder: 'Deskripsi Produk ..',
         tabsize: 2,
         height: 130,
         toolbar: [

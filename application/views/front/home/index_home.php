@@ -1,26 +1,31 @@
-<section class="boot-elemant-bg py-md-5 py-4" style="height: 500px; background-image: linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,.5)), url('assets/img/galery/bg.jpg');">
-    <div class="container position-relative py-md-5 py-0">
-        <div class="row">
-            <div class="container" style="position: absolute;">
-                <div class="row">
-                    <div class="col-md-6">
-                    <img class="img-fluid" src="<?php echo base_url('assets/img/galery/wanita.png');?>">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="text-right text-white">
-                            <h1><b>Tokominigold.com</b></h1>
-                            <p>Solusi anda dalam memiliki emas
-dan anda langsung pegang emas. Koin emas 24 karat bersertifikat dan teruji secara langsung. 
-                Aneka ukuran menjadi solusi menabung dan mengumpulkan emas, mulai 
-                dari 0,05 gram, 0,1 gram, 0,25 gram</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Beli Sekarang</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <?php $i=1; foreach ($slider as $slider) { ?>
+      <div class="carousel-item <?php if($i==1){echo 'active';} ?> ">
+        <a href="<?php echo base_url().$slider->galery_url;?>"><img class="img-fluid" src="<?php echo base_url('assets/img/galery/'.$slider->galery_img) ?>" alt="<?php echo $slider->galery_title ?>"></a>
+        <div class="container">
+          <div class="carousel-caption text-left">
+          </div>
         </div>
+      </div>
+      <?php $i++; } ?>
     </div>
-    <div class="elemant-bg-overlay black"></div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 </section>
 
 

@@ -58,6 +58,13 @@ $meta = $this->meta_model->get_meta();
     </li>
 
     <li class="nav-item">
+        <a class="nav-link" href="<?php echo base_url('admin/galery'); ?>">
+            <i class="fas fa-fw fa-image"></i>
+            <span>Galery</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url('admin/seller'); ?>">
             <i class="far fa-fw fa-user"></i>
             <span>Reseller</span>
