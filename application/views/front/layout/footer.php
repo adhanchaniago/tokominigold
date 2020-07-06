@@ -30,8 +30,8 @@ $meta      = $this->meta_model->get_meta();
                 <h5>Produk Utama</h5>
                 <ul class="list-unstyled text-small">
 
-                    <li><a class="text-muted" href="#sec1">MiniGold</a></li>
-                    <li><a class="text-muted" href="#sec2">Antam</a></li>
+                    <li><a class="text-muted" href="<?php echo base_url('products/category_products/3');?>">MiniGold</a></li>
+                    <li><a class="text-muted" href="<?php echo base_url('products/category_products/4');?>">Antam</a></li>
 
                 </ul>
             </div>
@@ -41,7 +41,7 @@ $meta      = $this->meta_model->get_meta();
                     <li><a class="text-muted" href="<?php echo base_url('about') ?>">About Us</a></li>
                     <li><a class="text-muted" href="<?php echo base_url('contact') ?>">Contact Us</a></li>
                     <li><a class="text-muted" href="<?php echo base_url('products') ?>">Produk</a></li>
-                    <li><a class="text-muted" href="<?php echo base_url('berita') ?>">Berita</a></li>
+                    <!-- <li><a class="text-muted" href="<?php echo base_url('berita') ?>">Berita</a></li> -->
                 </ul>
             </div>
             <div class="col-6 col-md">
