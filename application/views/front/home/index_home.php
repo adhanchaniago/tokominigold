@@ -3,8 +3,7 @@
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
+    
   </ol>
   <div class="carousel-inner">
     <?php $i=1; foreach ($slider as $slider) { ?>
