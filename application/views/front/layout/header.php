@@ -18,6 +18,12 @@ $meta = $this->meta_model->get_meta();
     <meta name="author" content="<?php echo $meta->title ?>">
     <meta name="google-site-verification" content="<?php echo $meta->google_meta ?>" />
     <meta name="msvalidate.01" content="<?php echo $meta->bing_meta ?>" />
+
+    <meta property="og:title" content="<?php echo $meta->title ?>">
+    <meta property="og:description" content="<?php echo $meta->description ?>">
+    <meta property="og:image" content="<?php echo base_url('assets/img/logo/' . $meta->favicon) ?>">
+    <meta property="og:url" content="<?php echo base_url(); ?>">
+
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/template/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/template/css/style.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/template/icon/fontawesome5/css/all.min.css">
