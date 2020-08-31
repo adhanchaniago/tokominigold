@@ -32,7 +32,7 @@ $user           = $this->user_model->user_detail($id);
                                             Rp. <?php echo number_format($product->price_reseller,'0',',','.'); ?>
                                         
                                         <?php  else: ?>
-                                            Rp. <?php echo number_format($product->product_price,'0',',','.'); ?>
+                                            Rp. <?php echo $product->product_price,'0',',','.'); ?>
                                         <?php endif; ?>
                            </h3>                          
                         </div>
