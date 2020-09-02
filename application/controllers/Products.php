@@ -165,6 +165,14 @@ class Products extends CI_Controller
   {
     $product                          = $this->products_model->product_detail($id);
     //Validasi
+
+    $this->form_validation->set_rules(
+      'user_title','Title','required',
+      array(
+        'required'                    => 'Anda harus memilih %s',
+      )
+    );
+
     $this->form_validation->set_rules(
       'user_name','Nama Lengkap','required',
       array(
@@ -205,6 +213,7 @@ class Products extends CI_Controller
         'product_size'                => $this->input->post('product_size'),
         'product_price'               => $this->input->post('product_price'),
         'product_qty'                 => $this->input->post('product_qty'),
+        'user_title'                 => $this->input->post('user_title'),
         'user_name'                   => $this->input->post('user_name'),
         'user_email'                  => $this->input->post('user_email'),
         'user_phone'                  => $this->input->post('user_phone'),

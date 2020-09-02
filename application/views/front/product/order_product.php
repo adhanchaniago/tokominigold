@@ -72,6 +72,9 @@ $user           = $this->user_model->user_detail($id);
 
     <input type="hidden" name="user_id" value="<?php echo $user->id;?>">
     <input type="hidden" name="product_price" value="<?php echo $product->price_reseller;?>">
+    <input type="hidden" name="user_title" value="<?php echo $user->user_title;?>">
+
+    
     
 <div class="form-group row">
             <label class="col-lg-3 col-form-label">Nama Lengkap<span class="text-danger">*</span>
@@ -108,6 +111,25 @@ $user           = $this->user_model->user_detail($id);
 <!-- End If User Login -->
 <?php else:?>
     <input type="hidden" name="product_price" value="<?php echo $product->product_price;?>">
+
+    <div class="form-group row">
+    <label class="col-lg-3 col-form-label">Title<span class="text-danger">*   </span> 
+            </label>
+            <div class="col-lg-6">
+                            <select class="form-control form-control-chosen" name="user_title" value="">
+                                <option></option>
+                                <option value='Bapak'>Bapak</option>
+                                <option value='Ibu'>Ibu</option>
+                                <option value='Saudara'>Saudara</option>
+                                <option value='Saudari'>Saudari</option>
+
+                            </select>
+                        </div><br>
+
+                        <?php echo form_error('user_title', '<small class="text-danger">', '</small>'); ?>
+                        
+</div>
+
 
 <div class="form-group row">
             <label class="col-lg-3 col-form-label">Nama Lengkap<span class="text-danger">*</span>
