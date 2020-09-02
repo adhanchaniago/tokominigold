@@ -7,10 +7,15 @@ class Auth extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->library('form_validation');
+		
 	}
 
 	public function index()
 	{
+		if($this->session->userdata('id')){
+			redirect('myaccount');
+		}
+
 		$this->form_validation->set_rules(
 			'email',
 			'Email',
@@ -82,6 +87,10 @@ class Auth extends CI_Controller
 
 	public function register()
 	{
+		if($this->session->userdata('id')){
+			redirect('myaccount');
+		}
+		
 		$this->form_validation->set_rules(
 			'user_name',
 			'Nama',
